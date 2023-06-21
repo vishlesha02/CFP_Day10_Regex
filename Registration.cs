@@ -111,5 +111,24 @@ namespace RegexRegistration
             }
         }
 
+        private String pattern6 = @"^(?=.*[A-Z])[A-Za-z]{8,}$";
+        public void Password2()
+        {
+            Console.WriteLine("Enter the Password");
+            String pass2 = Console.ReadLine();
+
+            Regex obj5 = new Regex(pattern6);
+
+            if (obj5.IsMatch(pass2))
+            {
+                Console.WriteLine($"Password : {pass2} is valid");
+            }
+            else
+            {
+                Console.WriteLine($"Password : {pass2} is not valid");
+
+            }
+        }
+
     }
 }
