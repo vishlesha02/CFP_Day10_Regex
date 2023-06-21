@@ -26,6 +26,10 @@ public class Program
         // UC6 = Valid Password with at least 1 UpperCase Letter.
         user.Password2();
 
+        // UC7 = Valid Password with at least 1 Numeric Number.
+        user.Password3();
+
+
 
     }
 
