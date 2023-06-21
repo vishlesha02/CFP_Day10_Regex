@@ -72,5 +72,25 @@ namespace RegexRegistration
             }
         }
 
+        private String pattern4 = @"^\+?\d{2}\s\d{10}$";
+
+        public void Number()
+        { 
+            Console.WriteLine("Enter Phone Number");
+            String no = Console.ReadLine();
+
+            Regex obj4=new Regex(pattern4);
+            if (obj4.IsMatch(no)) 
+            {
+                Console.WriteLine($"Mobile Number : {no} is valid");
+            
+            }
+            else
+            {
+
+                Console.WriteLine($"Mobile Number : {no} is not valid");
+            }
+        }
+
     }
 }
