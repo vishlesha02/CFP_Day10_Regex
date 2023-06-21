@@ -5,11 +5,13 @@ public class Program
 {
     public static void Main(String[] args)
     {
-        Registration uc1 = new Registration();
+        Registration user = new Registration();
         
-        uc1.FirstName();
+        user.FirstName();
 
-        uc1.LastName();
+        user.LastName();
+
+        user.Email();
 
 
 

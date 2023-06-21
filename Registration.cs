@@ -34,7 +34,7 @@ namespace RegexRegistration
         public void LastName() 
         {
 
-        Console.WriteLine("Enter Last Name");
+            Console.WriteLine("Enter Last Name");
             String lastname = Console.ReadLine();
 
             Regex obj2=new Regex(pattern2);
@@ -51,6 +51,26 @@ namespace RegexRegistration
             }
         }
 
+
+        private String pattern3 = @"^[a-z]{3}+[\.][a-z]{3}+[@][a-z]{2}+[\.][a-z]{2}+[\.][a-z]{2}$";
+
+        public void Email()
+        { 
+            Console.WriteLine("Enter Your E-Mail-Id");
+            String email = Console.ReadLine();
+
+            Regex obj3=new Regex(pattern3);
+
+            if (obj3.IsMatch(email)) 
+            {
+                Console.WriteLine($"Email-Id : {email} is valid");
+            }
+        
+            else
+            {
+                Console.WriteLine($"Email-Id : {email} is not valid");
+            }
+        }
 
     }
 }
