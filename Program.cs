@@ -1,9 +1,12 @@
-﻿public class Program
+﻿using RegexRegistration;
+
+public class Program
 {
     public static void Main(String[] args)
-    { 
-    
-        Console.WriteLine("Hello World");
+    {
+
+        Registration uc1 = new Registration();
+        uc1.FirstName();
     
     }
 
