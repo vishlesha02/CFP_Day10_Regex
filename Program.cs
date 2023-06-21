@@ -15,7 +15,7 @@ public class Program
 
         user.Number();
 
-
+        user.Password();
 
     }
 

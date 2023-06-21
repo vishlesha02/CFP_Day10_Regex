@@ -92,5 +92,24 @@ namespace RegexRegistration
             }
         }
 
+        private String pattern5 = @"^[A-Za-z]{8,}$";
+        public void Password()
+        { 
+            Console.WriteLine("Enter the Password");
+            String pass = Console.ReadLine();
+
+            Regex obj5=new Regex(pattern5);
+
+            if (obj5.IsMatch(pass)) 
+            {
+                Console.WriteLine($"Password : {pass} is valid");
+            }
+            else
+            {
+                Console.WriteLine($"Password : {pass} is not valid");
+
+            }
+        }
+
     }
 }
